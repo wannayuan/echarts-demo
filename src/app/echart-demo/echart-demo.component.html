@@ -1,1 +1,22 @@
 <div id="main" style="width: 600px;height: 400px;"></div>
+<div id="main1" style="width: 600px;height: 400px;"></div>
+<div id="main2" style="width: 600px;height: 400px;"></div>
+<nz-card style="width:300px;" [nzTitle]="template1" [nzExtra]="extraTemplate">
+    <p>Card content</p>
+    <p>Card content</p>
+    <p>Card content</p>
+  </nz-card>
+  <nz-card style="width:300px;" [nzTitle]="template2" [nzExtra]="extraTemplate">
+    <p>Card content</p>
+    <p>Card content</p>
+    <p>Card content</p>
+  </nz-card>
+  <ng-template #extraTemplate>
+    <a>More</a>
+  </ng-template>
+  <ng-template #template1>
+    <span>{{test1}}</span>
+  </ng-template>
+  <ng-template #template2>
+    <span>{{test2}}</span>
+  </ng-template>
